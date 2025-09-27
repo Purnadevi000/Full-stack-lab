@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Colored HTML Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            color: #2c3e50;
+        }
+        th {
+            background-color: #b92995ff;
+            color: white;
+            border: 2px solid #f00a1dff;
+            padding: 10px;
+        }
+        td {
+            border: 2px solid #57b929ff;
+            padding: 10px;
+            text-align: center;
+        }
+        tr:nth-child(even) td {
+            background-color: #05b992ff;
+        }
+        tr:nth-child(odd) td {
+            background-color: #0e8d03ff;
+        }
+        tr:hover td {
+            background-color: #f39c12;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center; color:#34495e;">Understanding HTML Tables with Colors</h2>
+
+<table border="2">
+    <caption>Sample Table with rowspan and colspan</caption>
+    <tr>
+        <th>Product</th>
+        <th colspan="2">Sales</th>
+        <th>Remarks</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Apples</td>
+        <td>January</td>
+        <td>150</td>
+        <td rowspan="2">Good sales</td>
+    </tr>
+    <tr>
+        <td>February</td>
+        <td>180</td>
+    </tr>
+    <tr>
+        <td>Oranges</td>
+        <td colspan="2">300</td>
+        <td>Excellent</td>
+    </tr>
+</table>
+
+</body>
+</html>
