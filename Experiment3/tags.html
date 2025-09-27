@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Semantic Tags Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header, nav, main, footer {
+      padding: 20px;
+    }
+    header {
+      background-color: #f4f4f4;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+    }
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    main {
+      display: flex;
+      padding: 20px;
+    }
+    article {
+      flex: 2;
+      margin-right: 20px;
+    }
+    aside {
+      flex: 1;
+      background-color: #f9f9f9;
+      padding: 15px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+    figure {
+      margin: 0;
+    }
+    figcaption {
+      font-style: italic;
+      font-size: 0.9em;
+    }
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Website</h1>
+    <p>Welcome to my sample HTML5 layout</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Articles</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <article>
+      <header>
+        <h2>Main Article Title</h2>
+        <p><span class="highlight">Posted on:</span> September 27, 2025</p>
+      </header>
+
+      <section>
+        <p>This is the first section of the article. It uses semantic HTML5 tags for better structure and accessibility.</p>
+      </section>
+
+      <section>
+        <p>This is another section with an image:</p>
+        <figure>
+          <img src="https://via.placeholder.com/400x200" alt="Sample Image">
+          <figcaption>A sample placeholder image with a caption</figcaption>
+        </figure>
+      </section>
+
+      <footer>
+        <p>Article footer - Written by John Doe</p>
+      </footer>
+    </article>
+
+    <aside>
+      <h3>Related Info</h3>
+      <p>This is an aside element. It usually contains related information or side content.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

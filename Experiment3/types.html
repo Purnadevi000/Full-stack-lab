@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Styles Demo</title>
+  
+  <!-- Internal CSS -->
+  <style>
+    /* Internal style */
+    h2 {
+      color: green;          /* selector: h2 (element) */
+      font-style: italic;    /* property: font-style */
+      font-size: 24px;       /* property: font-size */
+    }
+
+    /* External CSS simulation */
+    /* Imagine this is inside styles.css and linked externally */
+    #external-style {
+      background-color: lightblue;  /* selector: #external-style (ID) */
+      padding: 10px;                 /* property: padding */
+      border: 2px solid blue;        /* property: border */
+    }
+  </style>
+
+  <!-- To link external stylesheet (if separate file is created):
+  <link rel="stylesheet" href="styles.css" />
+  -->
+</head>
+<body>
+
+  <!-- Inline Style -->
+  <p style="color: red; font-weight: bold;">
+    This paragraph is styled with <strong>inline CSS</strong>.<br>
+    <!-- Selector: <p> element with inline style -->
+    <!-- Properties: color, font-weight -->
+  </p>
+
+  <!-- Internal Style -->
+  <h2>This heading is styled with <em>internal CSS</em>.</h2>
+
+  <!-- External Style (simulated) -->
+  <div id="external-style">
+    This div is styled with <strong>external CSS</strong> (simulated here).
+  </div>
+
+</body>
+</html>
