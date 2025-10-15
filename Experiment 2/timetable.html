@@ -1,108 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Class Timetable</title>
-    <style>
-        table {
-            border-collapse: collapse; /* collapse borders to single lines */
-            border-spacing: 0;
-            width: 80%;
-            margin: 20px auto;
-            font-family: Arial, sans-serif;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-        th, td {
-            padding: 10px;
-            text-align: center;
-        }
-        caption {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        /* Colors for subjects */
-        .Math {
-            background-color: #FFD700; /* gold */
-        }
-        .Physics {
-            background-color: #87CEEB; /* skyblue */
-        }
-        .Chemistry {
-            background-color: #FFB6C1; /* lightpink */
-        }
-        .English {
-            background-color: #98FB98; /* palegreen */
-        }
-        .History {
-            background-color: #FFA07A; /* lightsalmon */
-        }
-        .ComputerScience {
-            background-color: #DDA0DD; /* plum */
-        }
-        .Biology {
-            background-color: #90EE90; /* lightgreen */
-        }
-        .Geography {
-            background-color: #F4A460; /* sandybrown */
-        }
-        .PhysicalEducation {
-            background-color: #87CEFA; /* light sky blue */
-        }
-        .LunchBreak {
-            background-color: #D3D3D3; /* lightgray */
-            font-weight: bold;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table</title>
 </head>
 <body>
+<h2> III rd btech TimeTable (INFORMATION TECHNOLOGY)</h2>
+<table border="2" cellspacing="5" cellpadding="5">
+<tr >
+<th rowspan="2">DAY/PERIOD</th>
+<th>1</th>
+<th>2</th>
+<th rowspan="2"> 11:00-11:10</th>
+<th>3</th>
+<th>4</th>
+<th rowspan="2"> 1:10-2:10</th>
+<th>5</th>
+<th>6</th>
+</tr>
+<tr>
+<td>9:00-10:00</td>
+<td>10:00-11:00</td>
+<td>11:10-12:10</td>
+<td>12:10-1:10</td>
+<td>2:10-3:10</td>
+<td>3:10-4:30</td>
+</tr>
 
-    <table>
-        <caption>Weekly Class Timetable</caption>
-        <tr>
-            <th>Time</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-        </tr>
-        <tr>
-            <td>9:00 - 10:00</td>
-            <td class="Math">Math</td>
-            <td class="Physics">Physics</td>
-            <td class="Chemistry" rowspan="2">Chemistry</td>
-            <td class="English">English</td>
-            <td class="History">History</td>
-        </tr>
-        <tr>
-            <td>10:00 - 11:00</td>
-            <td class="ComputerScience" colspan="2">Computer Science</td>
-            <td class="Biology">Biology</td>
-            <td class="Geography">Geography</td>
-        </tr>
-        <tr>
-            <td>11:00 - 12:00</td>
-            <td class="English">English</td>
-            <td class="Math">Math</td>
-            <td class="Physics">Physics</td>
-            <td class="PhysicalEducation" colspan="2">Physical Education</td>
-        </tr>
-        <tr>
-            <td>12:00 - 1:00</td>
-            <td colspan="5" class="LunchBreak">Lunch Break</td>
-        </tr>
-        <tr>
-            <td>1:00 - 2:00</td>
-            <td class="History">History</td>
-            <td class="Chemistry">Chemistry</td>
-            <td class="Math">Math</td>
-            <td class="ComputerScience">Computer Science</td>
-            <td class="English">English</td>
+<tr>
+<td>Monday</td>
+<td>AT&CD</td>
+<td>DMDW</td>
+<td rowspan="10">B<br>R<br>E<br>A<br>K</td>
+<td>AOR</td>
+<td>AJ</td>
+<td rowspan="10">B<br>R<br>E<br>A<br>K</td>
+<td colspan="2" >AJ LAB</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>CN</td>
+<td>TPL</td>
+<td>DMDW</td>
+<td>AOR</td>
+<td>AT&CD</td>
+<td>AJ</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>AJ</td>
+<td>CN</td>
+<td colspan="2">TT</td>
+<td colspan="2">CN(LAB)</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td colspan="2">COMMUNICATION SKILL</td>
+<td>AOR</td>
+<td>AT&CD</td>
+<td>AJ</td>
+<td>CN</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>DWDM</td>
+<td>CN</td>
+<td colspan="2">UI(LAB)</td>
+<td colspan="2">APPTITUDE</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>AOR</td>
+<td>FSD</td>
+<td colspan="2">FSD LAB</td>
+<td>DMDW</td>
+
+<td>AT&CD</td>
+</tr>
+</table>
+</body>
+</html>
