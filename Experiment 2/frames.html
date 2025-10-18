@@ -1,61 +1,119 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <title>Frames Simulation with Iframes</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100vw;
-            height: 100vh;
-            table-layout: fixed;
-        }
-        td {
-            border: 2px solid #333;
-            padding: 0;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            pointer-events: auto;
-        }
-    </style>
+<title>Vertical Frames Example</title>
 </head>
+<!-- Divide page into 3 columns -->
+<frameset cols="33%,34%,33%" border="3" framespacing="5">
+<frame src="image.html" name="frame1">
+<frame src="para.html" name="frame2">
+<frame src="link.html" name="frame3">
+<noframes>
 <body>
-    <table>
-        <tr style="height: 33%;">
-            <td>
-                <!-- First frame: Image -->
-                <iframe srcdoc='
-                    <body style="margin:0; display:flex; justify-content:center; align-items:center; background:#f9f9f9;">
-                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="sample-image" style="max-width:100%; height:auto;">
-                    </body>' scrolling="no" ></iframe>
-            </td>
-        </tr>
-        <tr style="height: 33%;">
-            <td>
-                <!-- Second frame: Paragraph -->
-                <iframe srcdoc='
-                    <body style="margin:10px; font-family: Arial, sans-serif; background:#fff;">
-                        <p>This is a sample paragraph displayed inside the second frame.<br>Frames allow you to divide the browser window into multiple sections, each capable of displaying a separate HTML document.</p>
-                    </body>'></iframe>
-            </td>
-        </tr>
-        <tr style="height: 34%;">
-            <td>
-                <!-- Third frame: Hyperlink -->
-                <iframe srcdoc='
-                    <body style="margin:10px; font-family: Arial, sans-serif; background:#f0f0f0;">
-                        <a href="https://www.example.com" target="_blank">Visit Example.com</a>
-                    </body>'></iframe>
-            </td>
-        </tr>
-    </table>
+<p>Your browser does not support frames.</p>
+</body>
+</noframes>
+</frameset>
+</html>
+Image.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Frame</title>
+</head>
+<body style="text-align:center; background-color: #f2f2f2;">
+    <h3>Image Frame</h3>
+    <img src="jhansi.jpg" 
+         alt="Jhansi" width="250" height="150">
+    <img src="purna.jpg" 
+         alt="Purna" width="250" height="150">
+    <img src="nischala.jpg" 
+         alt="Nischala" width="250" height="150">
+    <img src="raji.jpg" 
+         alt="raji" width="250" height="150">
 </body>
 </html>
+Para.html
+<html>
+<head>
+<title>Paragraph Frame</title>
+<style>
+<style>
+body {
+text-align: center;
+background: #eef;
+font-family: Georgia, serif;
+padding: 30px;
+}
+h3 {
+color: #003366;
+}
+p {
+font-size: 18px;
+color: #444;
+line-height: 1.6;
+}
+
+</style>
+</head>
+<body>
+<h3>Second Frame: Paragraph</h3>
+<p>
+<h3 style="color:rgb(12, 203, 34)">Jhansi</h3>
+<p>Always cheerful and loves clicking photos.<br> Enjoys traveling and exploring places.<br> Fun-loving and full of creative ideas.<br> Brings smiles wherever goes.</p>
+</p>
+<p>
+<h3 style="color:rgb(70, 21, 216)">Purna</h3>
+<p>Calm, caring, and always helpful.<br> Loves reading and peaceful moments.<br> Gives the best advice to everyone.<br> Simple and pure-hearted.</p>
+</p>
+<p>
+<h3 style="color:red">Nischala</h3>
+<p>A complete foodie and very funny.<br> Loves hanging out with friends.<br> Always spreading laughter and joy.<br> Enjoys music and fun talks.</p>
+</p>
+<p>
+<h3 style="color:black">Raji</h3>
+<p>Hardworking and full of dreams.<br> Smart in managing everything well.<br> Loves learning new things.<br> Confident and responsible.</p>
+</p>
+</body>
+</html>
+Link.html
+<html>
+<head>
+<title>Link Frame</title>
+<style>
+body {
+text-align: center;
+background: #ffe;
+font-family: Verdana, sans-serif;
+padding: 30px;
+}
+h3 {
+color: #996600;
+}
+a {
+font-size: 18px;
+color: #0066cc;
+
+text-decoration: none;
+padding: 10px 20px;
+border: 2px solid #0066cc;
+border-radius: 8px;
+transition: 0.3s;
+display: block;
+margin: 15px 0;
+}
+a:hover {
+background: #0066cc;
+color: white;
+}
+</style>
+</head>
+<body>
+<h3>Third Frame: Hyperlink</h3>
+<a href="https://www.codechef.com/users/Jhansi/" target="_blank">Jhansi</a><br /><br />
+<a href="https://www.codechef.com/users/Purna/edit">Purna</a><br /><br />
+<a href="https://www.codechef.com/users/Nischala/" target="_blank">Nischala</a><br /><br />
+<a href="https://www.codechef.com/users/Raji" target="_blank">Raji</a>
+</body>
+</html>
+
