@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CSS Colors</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colors Example</title>
+<style>
+.color {
+  background-color: lightseagreen;
+  color: white;
+  padding: 20px;
+}
 
-        .name {
-            color: red; /* Named color */
-        }
+.RGB {
+  background-color: rgb(255, 223, 105);
+  color: rgb(120, 50, 0);
+  padding: 20px;
+}
 
-        .hex {
-            color: #00ff00; /* Hex code */
-        }
+.RGBA {
+  background-color: rgba(255, 99, 71, 0.4);
+  color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
 
-        .rgb {
-            color: rgb(0, 0, 255); /* RGB */
-        }
+.HexwithAlpha {
+  background-color: #6a5acd80; /* semi-transparent slate blue */
+  color: #ffffffcc; /* slightly transparent white */
+  padding: 20px;
+}
 
-        .rgba {
-            color: rgba(255, 0, 0, 0.5); /* RGB with transparency */
-        }
-
-        .hsl {
-            color: hsl(240, 100%, 50%); /* HSL */
-        }
-
-        .hsla {
-            color: hsla(120, 100%, 25%, 0.7); /* HSL with alpha */
-        }
-    </style>
+.HSLA {
+  background-color: hsla(300, 80%, 70%, 0.4);
+  color: hsla(0, 0%, 20%, 1);
+  padding: 20px;
+}
+</style>
 </head>
 <body>
-    <h1>Color Examples</h1>
-    <p class="name">This is a named color (red)</p>
-    <p class="hex">This is a hex color (#00ff00)</p>
-    <p class="rgb">This is an RGB color (0,0,255)</p>
-    <p class="rgba">This is an RGBA color with transparency</p>
-    <p class="hsl">This is an HSL color (blue)</p>
-    <p class="hsla">This is an HSLA color (green with alpha)</p>
+<div class="color">This is defined by using the <b>Color Name</b></div>
+
+<div class="RGB">This is defined by using the
+<b>RGB (Red, Green, Blue)</b></div>
+
+<div class="RGBA">This is defined by using the
+<b>RGBA (Red, Green, Blue, Alpha)</b></div>
+
+<div class="HexwithAlpha">This is defined by using the
+<b>Hex with Alpha (8-digit HEX)</b></div>
+
+<div class="HSLA">This is defined by using the
+<b>HSLA (Hue, Saturation, Lightness, Alpha)</b></div>
 </body>
 </html>
+
+
+OUTPUT: 
